@@ -1,0 +1,12 @@
+.title-container__title {
+    font-size: 4rem;
+}
+.info-section {
+    border: none
+}
+.info-container {
+    width: 350px;
+    padding: 20px 40px;
+    border: 1px solid var(--dark-blue);
+    border-radius: 20px;
+}
