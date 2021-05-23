@@ -1,39 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
     <main>
-        <section>
-            <h1>Hace cuantos días naciste</h1>
-            <p></p>
+        <section class="title-container">
+            <h1 class="title-container__title">Hace cuantos días naciste</h1>
+            <p class="title-container__description">Este programa se encarga de decirte los días que llevas vivo desde que naciste solo tienes que poner tu fecha de nacimiento.</p>
+            <p class="title-container__description--clarification">*Tienes que poner número del mes que naciste</p>
         </section>
-        <section>
-            <div>
-                <h3>Escribe tu fecha de nacimiento</h3>
-                <div>
-                    <label for="#">
-                        <span>Año</span>
-                        <input type="number" placeholder="Año que naciste" id="año">
+        <section class="info-section">
+            <div class="info-container">
+                <h3 class="info-container__title">Escribe tu fecha de nacimiento</h3>
+                <div class="info-container__form">
+                    <label for="#" class="container__form">
+                        <span class="container__form--title">Año</span>
+                        <input type="number" placeholder="Año que naciste" id="año" class="container__form--input">
                     </label>
-                    <label for="#">
-                        <span>Mes</span>
-                        <input type="number" placeholder="Mes que naciste" id="mes">
+                    <label for="#" class="container__form">
+                        <span class="container__form--title">Mes</span>
+                        <input type="number" placeholder="Mes que naciste" id="mes" class="container__form--input">
                     </label>
-                    <label for="#">
-                        <span>Día</span>
-                        <input type="number" placeholder="Día que naciste" id="dia">
+                    <label for="#" class="container__form">
+                        <span class="container__form--title">Día</span>
+                        <input type="number" placeholder="Día que naciste" id="dia" class="container__form--input">
                     </label>
-                    <input type="submit" value="Let´s Go!" id="boton">
+                    <input type="submit" value="Let´s Go!" id="boton" class="button">
                 </div>
             </div>
         </section>
-        <section>
-            <p id="result"></p>
+        <section class="resultado_container">
+            <p id="description" class="descripcion"></p>
+            <p id="result" class="resultado"> </p>
         </section>
     </main>
     <script src="fechas.js"></script>

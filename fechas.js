@@ -3,6 +3,8 @@ const mes = document.getElementById('mes')
 const dia = document.getElementById('dia')
 const button = document.getElementById('boton')
 const resultado = document.getElementById('result')
+const descripcion_resultado = document.getElementById('description')
+const descripcion = 'Los días que llevas vivo son' 
 
 button.addEventListener('click', diasVivo)
 
@@ -61,7 +63,8 @@ function diasVivo(){
     month = transformarMes(month)
     
     //console.log(fecha_actual.getFullYear(new Date()))
-    resultado.innerHTML =operacionDeDiasVivo(fecha_actual, fecha_usuario)    
+    descripcion_resultado.innerHTML = descripcion
+    resultado.innerHTML = operacionDeDiasVivo(fecha_actual, fecha_usuario)    
     }
 }
 
