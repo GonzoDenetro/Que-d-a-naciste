@@ -93,6 +93,9 @@ main {
 ::placeholder {
     color: var(--grey);
 }
+.final {
+    margin-bottom: 40px;
+}
 .button {
     font-size: 1.7rem;
     padding: 5px;
